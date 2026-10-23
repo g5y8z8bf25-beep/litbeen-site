@@ -1,0 +1,239 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <meta name="theme-color" content="#07152B" />
+    <meta
+      name="description"
+      content="Litbeen Privacy Policy: how the app handles local travel history, backups, optional Wikimedia requests, and website access."
+    />
+    <link rel="icon" type="image/png" sizes="32x32" href="../assets/favicon-32x32.png" />
+    <link rel="apple-touch-icon" sizes="180x180" href="../assets/apple-touch-icon.png" />
+    <link rel="stylesheet" href="../assets/styles.css" />
+    <title>Privacy Policy — Litbeen</title>
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to content</a>
+    <div class="page-shell">
+      <header class="site-header" aria-label="Primary navigation">
+        <a class="brand" href="../" aria-label="Litbeen home">
+          <img src="../assets/litbeen-icon.png" alt="" width="44" height="44" />
+          <span>Litbeen</span>
+        </a>
+        <nav class="site-nav" aria-label="Website">
+          <a href="../">Home</a>
+          <a aria-current="page" href="./">Privacy</a>
+          <a href="../support/">Support</a>
+        </nav>
+      </header>
+
+      <main id="main" class="legal-layout">
+        <header class="legal-hero">
+          <p class="eyebrow">Litbeen 1.0</p>
+          <h1>Privacy Policy</h1>
+          <p class="legal-updated">Effective October 23, 2026</p>
+          <p class="legal-intro">
+            Litbeen is a local-first personal travel application. This policy describes what the
+            Litbeen app processes, what remains on your device, when third-party services receive a
+            request, and how the official Litbeen website operates.
+          </p>
+        </header>
+
+        <aside class="legal-summary" aria-label="Privacy summary">
+          <h2>In short</h2>
+          <ul>
+            <li>No Litbeen account is required.</li>
+            <li>Litbeen does not operate a server that receives your travel history.</li>
+            <li>No advertising or analytics SDK is included.</li>
+            <li>Optional Wikipedia information is fetched only when you request it.</li>
+          </ul>
+        </aside>
+
+        <article class="legal-content">
+          <section>
+            <h2>1. Scope</h2>
+            <p>
+              This policy applies to Litbeen 1.0 for iPhone and iPad and to this official website.
+              Apple, GitHub, Wikimedia, and other third parties have their own privacy practices for
+              services they operate.
+            </p>
+          </section>
+
+          <section>
+            <h2>2. Information processed by the app</h2>
+            <p>
+              When you mark or remove a visited city, Litbeen creates a local journey record. A
+              record can contain the GeoNames identifier; city, region, country or territory names
+              and codes; latitude and longitude; time zone; catalogue version; first-visited,
+              updated, and snapshot timestamps; a locally generated revision identifier; and a
+              state showing whether the place is visited or removed.
+            </p>
+            <p>
+              Search text, nearby-city results, globe position, and optional Wikipedia content are
+              used to provide the current experience. Litbeen does not add them to your journey
+              history unless you explicitly mark a city as visited. Wikipedia content is held only
+              in an in-memory cache for the current app session.
+            </p>
+          </section>
+
+          <section>
+            <h2>3. Local storage and retention</h2>
+            <p>
+              Journey records are stored in the app's local web storage on your device. Litbeen 1.0
+              does not automatically synchronize them to a Litbeen account or cloud database. The
+              app also preserves its earlier local-storage record during migration so it does not
+              silently destroy older history.
+            </p>
+            <p>
+              An active record remains until you remove the visited status or the app's local data
+              is deleted. Removing a visit changes the record to a deletion marker, called a
+              tombstone. Tombstones are retained locally so importing an older backup cannot
+              silently restore a city you removed. Litbeen 1.0 does not provide a separate control
+              for purging individual tombstones.
+            </p>
+            <p>
+              Deleting the app or clearing its website/app data may delete locally stored history.
+              Litbeen therefore provides manual JSON backup tools. Device-level backups are
+              controlled by you and Apple, not by Litbeen.
+            </p>
+          </section>
+
+          <section>
+            <h2>4. JSON backup and restore</h2>
+            <p>
+              Export creates a JSON file on your device containing active visits and tombstones,
+              including the journey fields described above. Copy Backup JSON places the same data
+              on your device clipboard. Litbeen does not upload either form to a Litbeen server.
+              Where you save, paste, or share a backup is your choice and may involve another app or
+              service with its own privacy practices.
+            </p>
+            <p>
+              Import reads a backup you select, validates it locally, and deterministically merges
+              newer records into local history. Invalid or unsupported files are rejected rather
+              than replacing the existing journey.
+            </p>
+          </section>
+
+          <section>
+            <h2>5. Network requests and third parties</h2>
+            <h3>Optional place information</h3>
+            <p>
+              When you choose <strong>Explore this place</strong>, Litbeen sends direct HTTPS
+              requests from your device to Wikidata and English Wikipedia. Request parameters can
+              include a GeoNames identifier, city name, Wikidata item identifier, or Wikipedia
+              article title. If a freely licensed image is available, the image can be loaded from
+              Wikimedia infrastructure. These services necessarily receive standard connection
+              information such as your IP address and browser or device request headers.
+            </p>
+            <p>
+              See the
+              <a href="https://foundation.wikimedia.org/wiki/Policy:Privacy_policy">Wikimedia Foundation Privacy Policy</a>
+              for Wikimedia's practices. Litbeen does not send your complete visited-city list to
+              Wikimedia.
+            </p>
+            <h3>Bundled geographic and visual resources</h3>
+            <p>
+              The GeoNames city catalogue, NASA Blue Marble Earth texture, and core application
+              resources are packaged with the iOS app. Using search or viewing the Earth does not
+              contact GeoNames or NASA. Natural Earth review resources are not loaded by the active
+              Litbeen 1.0 globe.
+            </p>
+            <h3>Apple distribution</h3>
+            <p>
+              Apple processes App Store and TestFlight downloads, purchases, diagnostics, and
+              related account activity under Apple's own terms and privacy policy. Litbeen does not
+              receive your Apple ID password or payment information.
+            </p>
+          </section>
+
+          <section>
+            <h2>6. Permissions, analytics, and advertising</h2>
+            <p>
+              Litbeen 1.0 does not request access to your location, photos, camera, microphone, or
+              contacts. It does not scan your photo library. The app contains no Litbeen account
+              system, advertising SDK, cross-app tracking SDK, or third-party analytics SDK.
+            </p>
+            <p>
+              Development-only performance diagnostics are not displayed in the normal production
+              experience and do not send their readings to Litbeen.
+            </p>
+          </section>
+
+          <section>
+            <h2>7. Official website</h2>
+            <p>
+              This website is a static GitHub Pages site. Litbeen does not add analytics scripts,
+              advertising, contact forms, cookies, or local storage to it. GitHub may process
+              technical request information, including IP addresses and logs, to host and secure
+              GitHub Pages. See the
+              <a href="https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement">GitHub General Privacy Statement</a>.
+            </p>
+          </section>
+
+          <section>
+            <h2>8. Security and your choices</h2>
+            <p>
+              Local-first storage limits routine data transmission, but no storage method is free
+              of risk. Protect access to your device and store exported backups securely. You can
+              stop optional Wikimedia requests by not opening Explore this place, and you can use
+              the core globe, local catalogue, and existing journey without that feature.
+            </p>
+          </section>
+
+          <section>
+            <h2>9. Children</h2>
+            <p>
+              Litbeen is a general-audience travel utility. It does not knowingly collect personal
+              information from children through a Litbeen account or backend because neither is
+              present in version 1.0.
+            </p>
+          </section>
+
+          <section>
+            <h2>10. Support communications</h2>
+            <p>
+              This website has no contact form. If you choose to email Litbeen Support, your email
+              provider sends the address, message, and any attachments you include to the mailbox
+              serving the address below. That information is used to respond to and resolve your
+              request. Litbeen 1.0 has no automated support-message retention schedule. Please do
+              not send a journey backup unless support specifically asks and you choose to share it.
+            </p>
+          </section>
+
+          <section>
+            <h2>11. Changes to this policy</h2>
+            <p>
+              If Litbeen's data practices change, this page will be updated with a new effective
+              date. A future account, cloud synchronization, or photo feature would require a policy
+              update before release.
+            </p>
+          </section>
+
+          <section>
+            <h2>12. Contact</h2>
+            <p>
+              For privacy questions, contact
+              <a href="mailto:litbeen@tutamail.com">litbeen@tutamail.com</a>.
+            </p>
+          </section>
+        </article>
+      </main>
+
+      <footer class="site-footer legal-footer">
+        <div>
+          <a class="brand footer-brand" href="../">
+            <img src="../assets/litbeen-icon.png" alt="" width="36" height="36" />
+            <span>Litbeen</span>
+          </a>
+          <p>Light up everywhere you've been.</p>
+        </div>
+        <nav aria-label="Footer">
+          <a aria-current="page" href="./">Privacy Policy</a>
+          <a href="../support/">Support</a>
+        </nav>
+        <p class="copyright">© 2026 Litbeen. All rights reserved.</p>
+      </footer>
+    </div>
+  </body>
+</html>
