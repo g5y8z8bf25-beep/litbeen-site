@@ -1,3 +1,4 @@
+
 <!doctype html>
 <html lang="en">
   <head>
@@ -72,8 +73,10 @@
             <p>
               Search text, nearby-city results, globe position, and optional Wikipedia content are
               used to provide the current experience. Litbeen does not add them to your journey
-              history unless you explicitly mark a city as visited. Wikipedia content is held only
-              in an in-memory cache for the current app session.
+              history unless you explicitly mark a city as visited. Litbeen does not write
+              Wikipedia content into your journey records. It keeps an
+              application-level in-memory cache for the current session; WebKit and Wikimedia may
+              also apply ordinary HTTP caching under their respective policies.
             </p>
           </section>
 
